@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link href="https://www.highcharts.com/highslide/highslide.css" rel="stylesheet" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+    </head>
+    <body style="margin:0;padding:0">
+                <div id="container" style="">Loading....</div>
+
+
+    <script>
+        $(function(){
+
+
+ 
+
+
+
+
+            Highcharts.setOptions({"lang": {}, "global": {}});
+            var option = {"loading": {}, "subtitle": {}, "xAxis": {"type": "datetime", "dateTimeLabelFormats": {"year": "%Y", "day": "%e %b", "month": "%b, %y"}}, "title": {"text": "Highchart bubble"}, "series": {}, "labels": {}, "yAxis": {}, "chart": {"renderTo": "container", "type": "bubble"}, "tooltip": {}, "plotOptions": {}, "credits": {"enabled": false}, "colors": {}, "pane": {}, "exporting": {}, "drilldown": {}, "navigation": {}, "legend": {"enabled": true}};
+
+
+            var data = [{"data": [[Date.UTC(2016,4,9,0,0,0,0), 1, 28], [Date.UTC(2016,4,10,0,0,0,0), 1, 44], [Date.UTC(2016,4,21,0,0,0,0), 1, 21], [Date.UTC(2016,4,12,0,0,0,0), 1, 19], [Date.UTC(2016,4,13,0,0,0,0), 1, 27], [Date.UTC(2016,4,17,0,0,0,0), 1, 35], [Date.UTC(2016,4,18,0,0,0,0), 1, 22], [Date.UTC(2016,4,19,0,0,0,0), 1, 36], [Date.UTC(2016,4,20,0,0,0,0), 1, 31], [Date.UTC(2016,4,23,0,0,0,0), 1, 36], [Date.UTC(2016,4,24,0,0,0,0), 1, 49], [Date.UTC(2016,4,25,0,0,0,0), 1, 49], [Date.UTC(2016,4,26,0,0,0,0), 1, 29], [Date.UTC(2016,4,27,0,0,0,0), 1, 36], [Date.UTC(2016,4,30,0,0,0,0), 1, 4], [Date.UTC(2016,4,31,0,0,0,0), 1, 2], [Date.UTC(2016,5,1,0,0,0,0), 1, 4], [Date.UTC(2016,5,3,0,0,0,0), 1, 3], [Date.UTC(2016,5,6,0,0,0,0), 1, 5]], "type": "bubble", "name": "user1"}, {"data": [[Date.UTC(2016,4,13,0,0,0,0), 1, 5], [Date.UTC(2016,5,6,0,0,0,0), 1, 6], [Date.UTC(2016,5,7,0,0,0,0), 1, 16], [Date.UTC(2016,5,8,0,0,0,0), 1, 2], [Date.UTC(2016,5,10,0,0,0,0), 1, 12]], "type": "bubble", "name": "user2"}, {"data": [[Date.UTC(2016,4,9,0,0,0,0), 1, 63], [Date.UTC(2016,4,10,0,0,0,0), 1, 77], [Date.UTC(2016,4,11,0,0,0,0), 1, 15], [Date.UTC(2016,4,16,0,0,0,0), 1, 66], [Date.UTC(2016,4,17,0,0,0,0), 1, 120], [Date.UTC(2016,4,18,0,0,0,0), 1, 15], [Date.UTC(2016,4,19,0,0,0,0), 1, 79], [Date.UTC(2016,4,20,0,0,0,0), 1, 63], [Date.UTC(2016,4,23,0,0,0,0), 1, 70], [Date.UTC(2016,4,24,0,0,0,0), 1, 98], [Date.UTC(2016,4,25,0,0,0,0), 1, 181], [Date.UTC(2016,4,26,0,0,0,0), 1, 67], [Date.UTC(2016,4,27,0,0,0,0), 1, 168], [Date.UTC(2016,4,31,0,0,0,0), 1, 9], [Date.UTC(2016,5,1,0,0,0,0), 1, 32], [Date.UTC(2016,5,2,0,0,0,0), 1, 8], [Date.UTC(2016,5,3,0,0,0,0), 1, 54], [Date.UTC(2016,5,6,0,0,0,0), 1, 28], [Date.UTC(2016,5,7,0,0,0,0), 1, 32], [Date.UTC(2016,5,8,0,0,0,0), 1, 19]], "type": "bubble", "name": "user3"}, {"data": [[Date.UTC(2016,4,9,0,0,0,0), 1, 30], [Date.UTC(2016,4,10,0,0,0,0), 1, 16], [Date.UTC(2016,4,11,0,0,0,0), 1, 15], [Date.UTC(2016,4,12,0,0,0,0), 1, 15], [Date.UTC(2016,4,13,0,0,0,0), 1, 30], [Date.UTC(2016,4,25,0,0,0,0), 1, 5], [Date.UTC(2016,4,26,0,0,0,0), 1, 1], [Date.UTC(2016,5,2,0,0,0,0), 1, 9], [Date.UTC(2016,5,3,0,0,0,0), 1, 6], [Date.UTC(2016,5,6,0,0,0,0), 1, 19], [Date.UTC(2016,5,7,0,0,0,0), 1, 3], [Date.UTC(2016,5,8,0,0,0,0), 1, 4]], "type": "bubble", "name": "user4"}];
+            option.series = data;
+
+ 
+
+            var chart = new Highcharts.Chart(option);
+
+
+
+
+
+ 
+
+
+        
+    });
+        </script>
+
+    </body>
+</html>
